@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime
 import xml.etree.ElementTree as ET
 
-ROOT = Path("/workspace")
+ROOT = Path(__file__).resolve().parent.parent
 XML = ROOT / "hohetour.WordPress.2026-09-20.xml"
 POSTS_DIR = ROOT / "_posts"
 PAGES_DIR = ROOT / "_pages"
