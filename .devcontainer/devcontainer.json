@@ -10,7 +10,7 @@
 		"ghcr.io/devcontainers-extra/features/gh-cli:1": {},
 		// Required by the dot-config feature below: its installer is a Node.js app
 		// and the Jekyll base image ships no Node.js.
-		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/node:2": {},
 		"ghcr.io/devcontainer-config/features/dot-config:4": {}
 	}
 
