@@ -48,11 +48,11 @@
 	// the "ruby" group that "vscode" is already a member of, make it group
 	// writable and set the setgid bit on the directories so gems installed
 	// later keep inheriting that group.
-	"postCreateCommand": [
-		"sudo chgrp -R ruby /usr/local/bundle",
-		"sudo chmod -R g+rwX /usr/local/bundle",
-		"sudo find /usr/local/bundle -type d -exec chmod g+s {} +"
-	]
+	// NOTE: postCreateCommand must be a single shell string (joined with &&
+	// so each step only runs if the previous one succeeded). The array form
+	// is argv for ONE command, not a list of commands, so
+	// ["cmd1", "cmd2"] would NOT run two commands.
+	"postCreateCommand": "sudo chgrp -R ruby /usr/local/bundle && sudo chmod -R g+rwX /usr/local/bundle && sudo find /usr/local/bundle -type d -exec chmod g+s {} + && bundle install"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
