@@ -13,8 +13,8 @@ Alle Tourenberichte und Infoseiten wurden aus dem WordPress-Export
 migriert: 13 Blogbeiträge (2004–2021) und 8 Infoseiten. Die Kommentare
 aus dem Original sind archiviert unter den jeweiligen Beiträgen erhalten.
 
-Die [Tourenübersicht](/hallo-welt/) beschreibt die klassische Route von
+Die [Tourenübersicht]({{ '/hallo-welt/' | relative_url }}) beschreibt die klassische Route von
 Zinnwald nach Schöna. Aktuelle Schneelagen und Fahrpläne bitte jeweils
-tagesaktuell prüfen – siehe [Wetter](/wetter/) und
-[Ausrüstung & Anreise](/ausruestung-anreise/).
+tagesaktuell prüfen – siehe [Wetter]({{ '/wetter/' | relative_url }}) und
+[Ausrüstung & Anreise]({{ '/ausruestung-anreise/' | relative_url }}).
 
