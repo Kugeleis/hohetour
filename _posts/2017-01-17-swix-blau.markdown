@@ -1,0 +1,17 @@
+---
+layout: single
+title: "Swix blau"
+date: 2017-01-17 11:35:11 +0100
+slug: swix-blau
+wordpress_id: 147
+author_profile: false
+read_time: true
+toc: true
+toc_label: "Inhalt"
+comments: false
+share: true
+categories:
+  - "Allgemein"
+excerpt: "Das soll jetzt keine Werbung für ein bestimmtes Produkt sein, sondern eher eine Zustandsbeschreibung. Das Winterwetter ist stabil und es liegt bis in die Elbniederungen Schnee. Das Bild zeigt die S..."
+---
+<a href="https://ht.hosting139769.a2e5e.netcup.net/wp-content/uploads/2017/01/vga_640.jpg"><img class="alignright size-medium wp-image-148" src="https://ht.hosting139769.a2e5e.netcup.net/wp-content/uploads/2017/01/vga_640-300x225.jpg" alt="" width="300" height="225" /></a>Das soll jetzt keine Werbung für ein bestimmtes Produkt sein, sondern eher eine Zustandsbeschreibung. Das Winterwetter ist stabil und es liegt bis in die Elbniederungen Schnee. Das Bild zeigt die Situation in Reinhardsdorf / Schöna (mit freundlicher Genehmigung von <a href="http://elbsandsteingebirge.de" target="_blank">elbsandsteingebirge.de</a>). Zu Altenberg spricht von 87cm Schnee und zum Wochenende können wir einige <a href="https://ht.hosting139769.a2e5e.netcup.net/?page_id=53" target="_blank">Sonnenstrahlen </a>bei deutlich negativen Temperaturen erwarten.
