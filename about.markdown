@@ -1,18 +1,20 @@
 ---
-layout: page
-title: About
+layout: single
+title: Über diese Seite
 permalink: /about/
+author_profile: false
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Diese Seite ist die statische Nachfolgerin des WordPress-Blogs
+**hohetour.de** („unterwegs zwischen Böhmen und Sachsen“).
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Alle Tourenberichte und Infoseiten wurden aus dem WordPress-Export
+(`hohetour.WordPress.2026-09-20.xml`, Stand September 2026) nach Jekyll
+migriert: 13 Blogbeiträge (2004–2021) und 8 Infoseiten. Die Kommentare
+aus dem Original sind archiviert unter den jeweiligen Beiträgen erhalten.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Die [Tourenübersicht](/hallo-welt/) beschreibt die klassische Route von
+Zinnwald nach Schöna. Aktuelle Schneelagen und Fahrpläne bitte jeweils
+tagesaktuell prüfen – siehe [Wetter](/wetter/) und
+[Ausrüstung & Anreise](/ausruestung-anreise/).
 
-
-[jekyll-organization]: https://github.com/jekyll

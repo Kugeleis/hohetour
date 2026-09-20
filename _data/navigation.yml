@@ -1,0 +1,22 @@
+# Hauptnavigation (Minimal Mistakes)
+main:
+  - title: "Start"
+    url: /
+  - title: "Die Tour"
+    url: /hallo-welt/
+  - title: "Winter"
+    url: /winter/
+  - title: "Sommer"
+    url: /sommer/
+  - title: "Skitour"
+    url: /skitour-zinnwald-mueckentuermchen-schoena/
+  - title: "Ausrüstung & Anreise"
+    url: /ausruestung-anreise/
+  - title: "Links"
+    url: /links/
+  - title: "Wetter"
+    url: /wetter/
+  - title: "Blog"
+    url: /blog/
+  - title: "Archiv"
+    url: /archiv/
