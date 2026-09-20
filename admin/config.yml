@@ -1,18 +1,42 @@
-# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
-
 backend:
   name: github
-  repo: user/repo
+  repo: Kugeleis/hohetour
+  branch: main
 
-media_folder: /public/media
-public_folder: /media
+site_url: https://hohetour.de
+display_url: https://hohetour.de
+
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
 
 collections:
   - name: posts
-    label: Posts
-    label_singular: Post
-    folder: /_posts
+    label: Beiträge
+    label_singular: Beitrag
+    folder: _posts
+    create: true
+    extension: markdown
+    format: frontmatter
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: /:year/:month/:day/:slug/
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, type: date }
-      - { label: Body, name: body, widget: richtext }
+      - { label: Titel, name: title, widget: string }
+      - { label: Datum, name: date, widget: datetime, format: yyyy-MM-dd HH:mm, date_format: yyyy-MM-dd, time_format: HH:mm }
+      - { label: Layout, name: layout, widget: hidden, default: single }
+      - { label: Kategorien, name: categories, widget: list, required: false, field: { label: Kategorie, name: category, widget: string } }
+      - { label: Schlagwörter, name: tags, widget: list, required: false, field: { label: Schlagwort, name: tag, widget: string } }
+      - { label: Inhalt, name: body, widget: markdown }
+  - name: pages
+    label: Seiten
+    label_singular: Seite
+    folder: _pages
+    create: true
+    extension: md
+    format: frontmatter
+    slug: '{{slug}}'
+    preview_path: /:slug/
+    fields:
+      - { label: Titel, name: title, widget: string }
+      - { label: Layout, name: layout, widget: hidden, default: single }
+      - { label: Permalink, name: permalink, widget: string, required: false, hint: 'z. B. /sommer/' }
+      - { label: Inhalt, name: body, widget: markdown }

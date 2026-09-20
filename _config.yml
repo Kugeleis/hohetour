@@ -10,7 +10,7 @@ description: >-
   für die Grenzregion zwischen Böhmen und Sachsen.
 baseurl: ""
 url: "https://hohetour.de"
-repository: hohetour/hohetour
+repository: Kugeleis/hohetour
 locale: "de-DE"
 
 author:
