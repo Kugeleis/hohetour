@@ -32,17 +32,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Ruby
-        # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
-        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        # v1.324.0 - runs on Node 24; knows the current Ruby patch releases
+        # https://github.com/ruby/setup-ruby/releases/tag/v1.324.0
+        uses: ruby/setup-ruby@a0102e0972be65f351c307e2d64b9314a57c8073
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
+          # Must be >= 3.2: Gemfile.lock pins Bundler 4 (BUNDLED WITH 4.0.20),
+          # which requires Ruby >= 3.2.0. Keep in sync with the dev container
+          # (mcr.microsoft.com/devcontainers/jekyll:2-bookworm ships Ruby 3.3.x).
+          ruby-version: '3.3'
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -50,7 +54,7 @@ jobs:
           JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   # Deployment job
   deploy:
