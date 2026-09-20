@@ -1,3 +1,28 @@
+def localize_uploads(content):
+    """Rewrite WP upload URLs to local Jekyll assets (baseurl-safe).
+
+    Keeps the WP directory layout under assets/images/uploads/, e.g.
+    wp-content/uploads/2020/07/05.jpg -> assets/images/uploads/2020/07/05.jpg
+    Rendered as a `relative_url` tag so GitHub Pages (baseurl /hohetour)
+    keeps working. Runs on every convert so `task convert` stays local.
+    """
+    if not content:
+        return ""
+    c = content
+    c = re.sub(
+        r"https?://(?:hohetour\.de|ht\.hosting139769\.a2e5e\.netcup\.net)/wp-content/uploads/([^\s\"'<>`,\)\]]+)",
+        lambda m: "{{ '/assets/images/uploads/%s' | relative_url }}" % m.group(1).rstrip(".,;)"),
+        c,
+        flags=re.IGNORECASE,
+    )
+    c = re.sub(
+        r"(?:\.\./)+wp-content/uploads/([^\s\"'<>`,\)\]]+)",
+        lambda m: "{{ '/assets/images/uploads/%s' | relative_url }}" % m.group(1).rstrip(".,;)"),
+        c,
+    )
+    return c
+
+
 def clean_content(content):
     if not content:
         return ""
@@ -28,6 +53,20 @@ def clean_content(content):
                "\n\n> **Hinweis:** [Galerie - Bildergalerie im Original auf hohetour.de]\n\n", c)
     c = c.replace("[pagelist]", "(Sitemap des Originals - siehe Navigation)")
     c = c.replace("cke_show_border", "")
+    c = localize_uploads(c)
+    c = re.sub(
+        r'<a(\s[^>]*?)href="https?://hohetour\.de/\?attachment_id=\d+"([^>]*?)>'
+        r'(\s*<img\s[^>]*?src="(\{\{ \'/assets/images/uploads/[^\'"]+\' \| relative_url \}\})"[^>]*>)',
+        lambda m: "<a%shref=\"%s\"%s>%s" % (m.group(1), m.group(4), m.group(2), m.group(3)),
+        c,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    c = re.sub(
+        r'\sdata-(?:full-url|link)="https?://hohetour\.de/\?attachment_id=\d+"',
+        "",
+        c,
+        flags=re.IGNORECASE,
+    )
     c = re.sub(r"\n{3,}", "\n\n", c)
     return c.strip() + "\n"
 

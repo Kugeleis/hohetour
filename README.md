@@ -18,8 +18,9 @@ Aus `hohetour.WordPress.2026-09-20.xml` (Stand September 2026) migriert:
   `about`, `impressum`, deutsche Startseite (`index.markdown`),
   Navigation (`_data/navigation.yml`).
 
-Bilder/GPX bleiben per Hotlink auf `https://hohetour.de/wp-content/uploads/…`
-referenziert; WP-Shortcodes (`mapsmarker`, `osm_map_v3`, `wpforecast`,
+Bilder/GPX liegen lokal unter `assets/images/uploads/…` (aus
+`wp-content/uploads/…` übernommen, Pfadstruktur beibehalten);
+WP-Shortcodes (`mapsmarker`, `osm_map_v3`, `wpforecast`,
 `table`, `Best_Wordpress_Gallery`) wurden zu Hinweisboxen. Details in
 [`tools/README.md`](tools/README.md).
 

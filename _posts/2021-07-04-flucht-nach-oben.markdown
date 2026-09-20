@@ -56,36 +56,36 @@ excerpt: "Es wird heiß Für die Stad sind deutlich über 30 Grad angesagt. Das 
 <p>Unterwegs warten zum Teil sehr grobe Wege und ernsthafte Abfahrten. Ein mountainbike, Ausdauer und fahrerisches Können sind hier unabdingbar. Es gibt aber immer auch einfachere Alternativen.</p>
 <p>
 
-> **Hinweis:** [Karte (Zentrum: autolat,autolon) - GPX: `https://hohetour.de/wp-content/uploads/gpx/taubenteich.gpx`]
+> **Hinweis:** [Karte (Zentrum: autolat,autolon) - GPX: `{{ '/assets/images/uploads/gpx/taubenteich.gpx' | relative_url }}`]
 
 </p>
-<p><a href="https://hohetour.de/wp-content/uploads/gpx/taubenteich.gpx">Tour GPX download</a></p>
+<p><a href="{{ '/assets/images/uploads/gpx/taubenteich.gpx' | relative_url }}">Tour GPX download</a></p>
 </div>
 
 <div class="wp-block-column" style="flex-basis:33.33%">
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_232@21-06-2021_19-18-29.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_232@21-06-2021_19-18-29-1024x576.jpg" alt="Zug" class="wp-image-979"/></a><figcaption>an 8:11 Altenberg</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_232@21-06-2021_19-18-29.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_232@21-06-2021_19-18-29-1024x576.jpg' | relative_url }}" alt="Zug" class="wp-image-979"/></a><figcaption>an 8:11 Altenberg</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_233@21-06-2021_19-18-29.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_233@21-06-2021_19-18-29-1024x576.jpg" alt="guter Weg" class="wp-image-995"/></a><figcaption>rollstuhlgerecht bis Zinnwald</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_233@21-06-2021_19-18-29.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_233@21-06-2021_19-18-29-1024x576.jpg' | relative_url }}" alt="guter Weg" class="wp-image-995"/></a><figcaption>rollstuhlgerecht bis Zinnwald</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_231@21-06-2021_19-18-29.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_231@21-06-2021_19-18-29-1024x576.jpg" alt="Restaurace" class="wp-image-985"/></a><figcaption>eindeutig Tschechien</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_231@21-06-2021_19-18-29.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_231@21-06-2021_19-18-29-1024x576.jpg' | relative_url }}" alt="Restaurace" class="wp-image-985"/></a><figcaption>eindeutig Tschechien</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2020/07/15.jpg"><img src="https://hohetour.de/wp-content/uploads/2020/07/15.jpg" alt="Tor" class="wp-image-243"/></a><figcaption>Radbrücke</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2020/07/15.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2020/07/15.jpg' | relative_url }}" alt="Tor" class="wp-image-243"/></a><figcaption>Radbrücke</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_228@21-06-2021_19-18-28.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_228@21-06-2021_19-18-28-1024x576.jpg" alt="Baumsterben" class="wp-image-1004"/></a><figcaption>auch auf 800m Seehöhe Waldsterben</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_228@21-06-2021_19-18-28.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_228@21-06-2021_19-18-28-1024x576.jpg' | relative_url }}" alt="Baumsterben" class="wp-image-1004"/></a><figcaption>auch auf 800m Seehöhe Waldsterben</figcaption></figure>
 
-<figure class="wp-block-image size-large is-resized"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_223@21-06-2021_19-18-28.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_223@21-06-2021_19-18-28-576x1024.jpg" alt="Mückentürmchen" class="wp-image-969" width="270" height="479"/></a><figcaption>Mückentürmchen</figcaption></figure>
+<figure class="wp-block-image size-large is-resized"><a href="{{ '/assets/images/uploads/2021/06/photo_223@21-06-2021_19-18-28.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_223@21-06-2021_19-18-28-576x1024.jpg' | relative_url }}" alt="Mückentürmchen" class="wp-image-969" width="270" height="479"/></a><figcaption>Mückentürmchen</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_220@21-06-2021_19-18-28.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_220@21-06-2021_19-18-28-1024x576.jpg" alt="downhill" class="wp-image-983"/></a><figcaption>der erste downhill</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_220@21-06-2021_19-18-28.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_220@21-06-2021_19-18-28-1024x576.jpg' | relative_url }}" alt="downhill" class="wp-image-983"/></a><figcaption>der erste downhill</figcaption></figure>
 
-<figure class="wp-block-image size-large is-resized"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_219@21-06-2021_19-18-25.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_219@21-06-2021_19-18-25-576x1024.jpg" alt="Landstraße" class="wp-image-975" width="269" height="479"/></a><figcaption>Straße nach Adolfsgrün</figcaption></figure>
+<figure class="wp-block-image size-large is-resized"><a href="{{ '/assets/images/uploads/2021/06/photo_219@21-06-2021_19-18-25.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_219@21-06-2021_19-18-25-576x1024.jpg' | relative_url }}" alt="Landstraße" class="wp-image-975" width="269" height="479"/></a><figcaption>Straße nach Adolfsgrün</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_216@21-06-2021_19-18-25.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_216@21-06-2021_19-18-25-1024x576.jpg" alt="Gasthaus" class="wp-image-984"/></a><figcaption>Gasthaus</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_216@21-06-2021_19-18-25.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_216@21-06-2021_19-18-25-1024x576.jpg' | relative_url }}" alt="Gasthaus" class="wp-image-984"/></a><figcaption>Gasthaus</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_217@21-06-2021_19-18-25.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_217@21-06-2021_19-18-25-576x1024.jpg" alt="trail" class="wp-image-1001"/></a><figcaption>feine single trails</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_217@21-06-2021_19-18-25.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_217@21-06-2021_19-18-25-576x1024.jpg' | relative_url }}" alt="trail" class="wp-image-1001"/></a><figcaption>feine single trails</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_214@21-06-2021_19-18-25.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_214@21-06-2021_19-18-25-576x1024.jpg" alt="Buchenwald" class="wp-image-1006"/></a><figcaption>grüne Kathedrale</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_214@21-06-2021_19-18-25.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_214@21-06-2021_19-18-25-576x1024.jpg' | relative_url }}" alt="Buchenwald" class="wp-image-1006"/></a><figcaption>grüne Kathedrale</figcaption></figure>
 
-<figure class="wp-block-image size-large"><a href="https://hohetour.de/wp-content/uploads/2021/06/photo_200@21-06-2021_19-18-21-1.jpg"><img src="https://hohetour.de/wp-content/uploads/2021/06/photo_200@21-06-2021_19-18-21-1-576x1024.jpg" alt="S3" class="wp-image-994"/></a><figcaption>S3 am Schneeberg</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="{{ '/assets/images/uploads/2021/06/photo_200@21-06-2021_19-18-21-1.jpg' | relative_url }}"><img src="{{ '/assets/images/uploads/2021/06/photo_200@21-06-2021_19-18-21-1-576x1024.jpg' | relative_url }}" alt="S3" class="wp-image-994"/></a><figcaption>S3 am Schneeberg</figcaption></figure>
 </div>
 </div>
 

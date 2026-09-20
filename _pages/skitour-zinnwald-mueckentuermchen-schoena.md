@@ -22,6 +22,6 @@ SCHÖNA - hier beginnt die S-Bahn nach Dresden und die fährt aller haben Stunde
 <div></div>
 <div>
 
-> **Hinweis:** [Karte (Zentrum: 50.80,13.965) - GPX: `../../../../wp-content/uploads/gpx/zi-schoe.gpx`]
+> **Hinweis:** [Karte (Zentrum: 50.80,13.965) - GPX: `{{ '/assets/images/uploads/gpx/zi-schoe.gpx' | relative_url }}`]
 
 </div>

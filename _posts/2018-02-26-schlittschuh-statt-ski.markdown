@@ -14,7 +14,7 @@ categories:
   - "Allgemein"
 excerpt: "Heute früh zeigt das Thermometer in Zinnwald zwar -16°C, aber der Schnee ist so dünn, daß die Sonne leichtes Spiel hat die Reste wegzufegen. Wenige Höhenmeter weniger und es ist ganz Schluß. Einzig..."
 ---
-<img class="alignright size-medium wp-image-214" src="https://ht.hosting139769.a2e5e.netcup.net/wp-content/uploads/2018/02/Eis-300x154.jpg" alt="" width="300" height="154" />
+<img class="alignright size-medium wp-image-214" src="{{ '/assets/images/uploads/2018/02/Eis-300x154.jpg' | relative_url }}" alt="" width="300" height="154" />
 
 Heute früh zeigt das Thermometer in Zinnwald zwar -16°C, aber der Schnee ist so dünn, daß die Sonne leichtes Spiel hat die Reste wegzufegen. Wenige Höhenmeter weniger und es ist ganz Schluß. Einziger Trost: Die Seen sind zugefroren und mangels Schnee spiegelglatt.
 

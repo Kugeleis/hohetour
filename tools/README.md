@@ -13,9 +13,10 @@ erzeugt worden.
 - **8 Seiten** (`_pages/`, Permalinks `/slug/`): Startseite
   (`hallo-welt`), Sommer, Winter, Skitour-Route, Ausrüstung & Anreise,
   Blog, Links, Wetter.
-- **Nicht migriert** (bewusst): 92 Medien-Anhänge (Bilder/GPX bleiben
-  per Hotlink auf `https://hohetour.de/wp-content/uploads/…`
-  referenziert), 6 Menüeinträge (ersetzt durch
+- **Nicht migriert** (bewusst): 92 Medien-Anhänge als eigene
+  Inhaltsseiten (ihre Dateien aus `wp-content/uploads/…` liegen lokal
+  unter `assets/images/uploads/…` mit gleicher Pfadstruktur und werden
+  aus Beiträgen/Seiten verlinkt), 6 Menüeinträge (ersetzt durch
   `_data/navigation.yml`), Entwürfe/Private Seiten
   (`Forum`, `Datenschutzerklärung`, `Praktische Autos`),
   `bwg_gallery`-Beitrag.
@@ -36,9 +37,22 @@ Hinweisboxen ersetzt:
 ## Dateien
 
 - `tools/convert_wp.py` + `convert_wp_part2_fixed.py` +
-  `convert_wp_part3.py` – Konverter (wird gemeinsam über
-  `tools/run_convert.py` ausgeführt)
+  `convert_wp_part3_fixed.py` – Konverter (wird gemeinsam über
+  `tools/run_convert.py` ausgeführt; `clean_content()` schreibt
+  `wp-content/uploads`-Links dabei direkt auf lokale
+  `assets/images/uploads/`-Pfade mit `relative_url` um)
 - `tools/run_convert.py` – führt die drei Teile in einem Prozess aus
+- `tools/download_uploads.py` – lädt alle in `_posts/`/`_pages/`
+  referenzierten `wp-content/uploads`-Dateien (Stand der Migration:
+  58 Dateien, ~11 MB) nach `assets/images/uploads/` (gleiche
+  Pfadstruktur wie in WordPress)
+- `tools/localize_uploads.py` – schreibt Remote-Upload-Links in
+  `_posts/`/`_pages/` auf lokale `relative_url`-Tags um (idempotent)
+- `tools/localize_attachments.py` – hängt Galerie-Anker von
+  `?attachment_id=`-Seiten auf das lokale Bild um und entfernt
+  `data-full-url`/`data-link`-Reste (idempotent)
+- `tools/collect_urls.py` – listet alle referenzierten Upload-Pfade
+  mit den Dateien, die sie verwenden (Prüf-/Audit-Hilfe)
 - `_data/navigation.yml` – Hauptnavigation
 - `_config.yml` – Minimal Mistakes, `locale: de-DE`, Feed/Sitemap
 
