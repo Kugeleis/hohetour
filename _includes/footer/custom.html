@@ -1,0 +1,7 @@
+<!-- start custom footer snippets -->
+<!-- Leaflet JS + renderer – only on pages with `map:` front matter (Minimal Mistakes hook) -->
+{% if page.map %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{{ '/assets/js/map-renderer.js' | relative_url }}" defer></script>
+{% endif %}
+<!-- end custom footer snippets -->

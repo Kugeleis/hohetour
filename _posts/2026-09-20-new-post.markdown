@@ -1,0 +1,22 @@
+---
+layout: single
+title:  "a map"
+date:   2026-09-20 19:24:49 +0000
+categories: Technik
+map:
+  center: [1.3521, 103.8198] # required — [latitude, longitude]
+  zoom: 12 # optional — 1 (world) to 18 (street), default: 13
+  height: 500px # optional — any CSS value, default: 450px
+  width: 100% # optional — any CSS value, default: 100%
+  style: default # optional — default | dark | light | satellite
+  markers: # optional — array of markers
+    - coords: [1.3521, 103.8198] # required — [latitude, longitude]
+      popup: "Marina Bay Sands" # optional — popup text on click
+      open: true # optional — popup opens on load
+---
+
+# Eine Karte
+
+sollte nun hier erscheinen
+
+{% map %}
