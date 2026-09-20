@@ -1,51 +1,27 @@
 {
-	"build": {
-		"dockerfile": "./Dockerfile",
-		"context": "."
-	},
-	"features": {
-		"ghcr.io/devcontainers/features/node:2": {
-			"nodeGypDependencies": true,
-			"version": "lts",
-			"npmVersion": "lts",
-			"pnpmVersion": "latest",
-			"nvmVersion": "latest"
-		},
-		"ghcr.io/devcontainers/features/git:1": {
-			"ppa": true,
-			"version": "latest"
-		},
-		"ghcr.io/audacioustux/devcontainers/taskfile:1": {},
-		"ghcr.io/devcontainer-config/features/dot-config:4": {}
-	},
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			// Set *default* container specific settings.json values on container create.
-			"settings": {
-				"github.copilot.chat.codeGeneration.instructions": [
-					{
-						"text": "This dev container includes `jekyll` (with `github-pages` and `jekyll-sass-converter`) and bundler (`bundle`) pre-installed and available on the `PATH`."
-					}
-				]
-			},
-			"extensions": [
-				"saoudrizwan.claude-dev"
-			]
-		}
-	},
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-	// 	// Jekyll server
-		4000,
-	// 	// Live reload server
-		35729
-	],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sh /usr/local/post-create.sh",
-
-	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+  "name": "hohetour.de",
+  "image": "ghcr.io/tpo42/adoc:latest",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "containerUser": "adoc",
+  "remoteUser": "adoc",
+  "postCreateCommand": "bundle config set --local path vendor/bundle && bundle install",
+  "appPort": [4000, 35729],
+  "forwardPorts": [4000, 35729],
+  "portsAttributes": {
+    "4000": { "label": "Jekyll", "onAutoForward": "notify" },
+    "35729": { "label": "LiveReload", "onAutoForward": "silent" }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node": {},
+    "ghcr.io/audacioustux/devcontainers/taskfile:1": {},
+    "ghcr.io/devcontainer-config/features/dot-config:4": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "saoudrizwan.claude-dev"
+      ]
+    }
+  }
 }
