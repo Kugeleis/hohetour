@@ -1,0 +1,234 @@
+# Developer tasks for the Hohe Tour Jekyll site (https://hohetour.de).
+#
+# `task` (https://taskfile.dev) and Bundler are both shipped by the dev
+# container (see .devcontainer/devcontainer.json), so a fresh clone only needs
+# `task install` before the first `task serve`.
+#
+# Usage:
+#   task                        # list every available task
+#   task serve                  # serve on http://localhost:4000 with live reload
+#   task serve PORT=4001        # any var below can be overridden on the CLI
+#   task new:post -- "Mein Titel"
+version: '3'
+
+vars:
+  JEKYLL: bundle exec jekyll
+  # 0.0.0.0 keeps the server reachable from the host through port forwarding.
+  HOST: 0.0.0.0
+  PORT: '4000'
+  POSTS_DIR: _posts
+  DRAFTS_DIR: _drafts
+  SITE_DIR: _site
+  # GitHub Pages project sites are published under https://<user>.github.io/<repo>/,
+  # which is the baseurl the deploy workflow passes to Jekyll. `build:pages` and
+  # `serve:pages` reproduce that locally so baseurl bugs show up before a push.
+  PAGES_BASEURL: '/hohetour'
+
+tasks:
+  default:
+    desc: List the available tasks
+    silent: true
+    cmds:
+      - task --list
+
+  install:
+    desc: Install the gems pinned in Gemfile.lock
+    status:
+      # Skipped when `bundle check` reports the lockfile as satisfied.
+      - bundle check
+    cmds:
+      - bundle install
+
+  update:
+    desc: Update gems within the Gemfile constraints and rewrite Gemfile.lock
+    cmds:
+      - bundle update
+
+  outdated:
+    desc: List gems that have newer versions available
+    cmds:
+      - bundle outdated
+
+  versions:
+    desc: Print the Ruby, Bundler and Jekyll versions in use
+    silent: true
+    cmds:
+      - ruby -v
+      - bundle -v
+      - '{{.JEKYLL}} --version'
+
+  clean:
+    desc: Delete the generated site and all Jekyll caches
+    cmds:
+      - '{{.JEKYLL}} clean'
+      - rm -rf {{.SITE_DIR}} .jekyll-cache .jekyll-metadata .sass-cache
+
+  build:
+    desc: Build the site into {{.SITE_DIR}}/ (development)
+    deps: [install]
+    sources:
+      - _config.yml
+      - Gemfile
+      - Gemfile.lock
+      - _data/**
+      - _drafts/**
+      - _includes/**
+      - _layouts/**
+      - _posts/**
+      - _sass/**
+      - assets/**
+      - '*.html'
+      - '*.markdown'
+      - '*.md'
+    generates:
+      - '{{.SITE_DIR}}/index.html'
+    cmds:
+      - '{{.JEKYLL}} build'
+
+  build:prod:
+    desc: Build with JEKYLL_ENV=production (like GitHub Pages does)
+    deps: [install]
+    env:
+      JEKYLL_ENV: production
+    cmds:
+      - '{{.JEKYLL}} build'
+
+  build:pages:
+    desc: 'Build exactly like GitHub Pages, including baseurl {{.PAGES_BASEURL}}'
+    deps: [install]
+    env:
+      JEKYLL_ENV: production
+    cmds:
+      - '{{.JEKYLL}} build --baseurl "{{.PAGES_BASEURL}}"'
+
+  serve:
+    desc: 'Serve the site on http://localhost:{{.PORT}} with live reload'
+    deps: [install]
+    interactive: true
+    cmds:
+      - '{{.JEKYLL}} serve --host {{.HOST}} --port {{.PORT}} --livereload'
+
+  serve:drafts:
+    desc: 'Serve including unpublished posts from {{.DRAFTS_DIR}}/'
+    deps: [install]
+    interactive: true
+    cmds:
+      - '{{.JEKYLL}} serve --host {{.HOST}} --port {{.PORT}} --livereload --drafts'
+
+  serve:pages:
+    desc: 'Serve a production build with baseurl {{.PAGES_BASEURL}}'
+    deps: [install]
+    interactive: true
+    env:
+      JEKYLL_ENV: production
+    cmds:
+      - '{{.JEKYLL}} serve --host {{.HOST}} --port {{.PORT}} --baseurl "{{.PAGES_BASEURL}}"'
+
+  doctor:
+    desc: Check the configuration and source files for problems
+    deps: [install]
+    cmds:
+      - '{{.JEKYLL}} doctor'
+
+  posts:
+    desc: List the posts and drafts on disk
+    silent: true
+    cmds:
+      - |
+        echo '{{.POSTS_DIR}}:'
+        ls -1 {{.POSTS_DIR}} 2>/dev/null | sort
+        echo '{{.DRAFTS_DIR}}:'
+        ls -1 {{.DRAFTS_DIR}} 2>/dev/null | sort
+
+  new:post:
+    desc: 'Create a new post: task new:post -- "My title"'
+    silent: true
+    cmds:
+      - task: new:file
+        vars:
+          DIR: '{{.POSTS_DIR}}'
+          DATED: 'true'
+
+  new:draft:
+    desc: 'Create a new draft: task new:draft -- "My title"'
+    silent: true
+    cmds:
+      - task: new:file
+        vars:
+          DIR: '{{.DRAFTS_DIR}}'
+          DATED: 'false'
+
+  # Shared scaffolding used by new:post / new:draft; DIR and DATED are injected
+  # by the calling task, the title comes in as a `--` CLI argument. The front
+  # matter mirrors the style of `jekyll new`, and German umlauts are
+  # transliterated in the slug so the resulting permalink stays readable.
+  new:file:
+    internal: true
+    silent: true
+    env:
+      DIR: '{{.DIR}}'
+      DATED: '{{.DATED}}'
+    cmds:
+      - |
+        set -eu
+        # Task shell-quotes the args forwarded after `--`, so expand them here
+        # to unwrap the quoting before using them as a value.
+        set -- {{.CLI_ARGS}}
+        if [ "$#" -eq 0 ]; then
+          set -- 'New post'
+        fi
+        TITLE="$*"
+        slug=$(printf '%s' "$TITLE" | tr '[:upper:]' '[:lower:]' \
+          | sed -E 's/ä/ae/g; s/ö/oe/g; s/ü/ue/g; s/ß/ss/g' \
+          | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+        if [ -z "$slug" ]; then
+          echo "error: title '$TITLE' does not yield a usable slug" >&2
+          exit 1
+        fi
+        if [ "$DATED" = 'true' ]; then
+          file="$DIR/$(date +%Y-%m-%d)-$slug.markdown"
+          date_line="date:   $(date '+%Y-%m-%d %H:%M:%S %z')"
+        else
+          file="$DIR/$slug.markdown"
+          date_line="# date: filled in when the draft is published"
+        fi
+        if [ -e "$file" ]; then
+          echo "error: $file already exists" >&2
+          exit 1
+        fi
+        title_yaml=$(printf '%s' "$TITLE" | tr '\n' ' ' | sed 's/"/\\"/g')
+        mkdir -p "$DIR"
+        printf '%s\n' '---' 'layout: post' "title:  \"$title_yaml\"" \
+          "$date_line" 'categories:' '---' '' > "$file"
+        echo "Created $file"
+
+  publish:draft:
+    desc: 'Move a draft into {{.POSTS_DIR}} with today''s date: task publish:draft -- my-slug'
+    silent: true
+    env:
+      DRAFTS_DIR: '{{.DRAFTS_DIR}}'
+      POSTS_DIR: '{{.POSTS_DIR}}'
+    cmds:
+      - |
+        set -eu
+        set -- {{.CLI_ARGS}}
+        if [ "$#" -eq 0 ]; then
+          echo 'error: no draft given, try: task publish:draft -- my-slug' >&2
+          echo 'available drafts:' >&2
+          ls -1 "$DRAFTS_DIR" 2>/dev/null | sed 's/^/  /' >&2 || true
+          exit 1
+        fi
+        slug="${1%.markdown}"
+        slug="${slug%.md}"
+        src="$DRAFTS_DIR/$slug.markdown"
+        if [ ! -f "$src" ]; then
+          echo "error: $src not found" >&2
+          exit 1
+        fi
+        dst="$POSTS_DIR/$(date +%Y-%m-%d)-$slug.markdown"
+        if [ -e "$dst" ]; then
+          echo "error: $dst already exists" >&2
+          exit 1
+        fi
+        mv "$src" "$dst"
+        echo "Published $dst"
