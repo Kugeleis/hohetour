@@ -7,11 +7,27 @@
 	"features": {
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
 		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {},
-		"ghcr.io/devcontainers-extra/features/gh-cli:1": {},
+		"ghcr.io/devcontainers-extra/features/gh-cli:1": {
+			"version": "latest"
+		},
 		// Required by the dot-config feature below: its installer is a Node.js app
 		// and the Jekyll base image ships no Node.js.
-		"ghcr.io/devcontainers/features/node:2": {},
-		"ghcr.io/devcontainer-config/features/dot-config:4": {}
+		"ghcr.io/devcontainers/features/node:2": {
+			"nodeGypDependencies": true,
+			"version": "lts",
+			"npmVersion": "lts",
+			"pnpmVersion": "latest",
+			"nvmVersion": "latest"
+		},
+		"ghcr.io/devcontainer-config/features/dot-config:4": {},
+		"ghcr.io/audacioustux/devcontainers/taskfile:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"saoudrizwan.claude-dev"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

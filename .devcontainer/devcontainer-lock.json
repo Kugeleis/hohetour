@@ -1,5 +1,10 @@
 {
   "features": {
+    "ghcr.io/audacioustux/devcontainers/taskfile:1": {
+      "version": "1.0.1",
+      "resolved": "ghcr.io/audacioustux/devcontainers/taskfile@sha256:c7650e10b0a4b97037e3ecdf1d59878f0158cb50957298d5bdde5b61210fb7ba",
+      "integrity": "sha256:c7650e10b0a4b97037e3ecdf1d59878f0158cb50957298d5bdde5b61210fb7ba"
+    },
     "ghcr.io/devcontainer-config/features/dot-config:4": {
       "version": "4.0.0",
       "resolved": "ghcr.io/devcontainer-config/features/dot-config@sha256:d9ca770ccb218e619d5725fd50f00dfacdf582d92a8c3901f11b53b1caddd878",
