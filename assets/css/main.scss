@@ -1,0 +1,72 @@
+---
+# Front matter comment required for Jekyll SCSS compilation
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'sunrise' }}";
+@import "minimal-mistakes";
+
+/* Custom enhancements for outdoor / hiking visual appeal */
+.page__content {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.leaflet-map-container {
+  margin: 1.8rem 0;
+  transition: all 0.3s ease;
+}
+
+.leaflet-map-container:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 0.6em 1.2em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Feature grid cards for home page */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: #fdfdfd;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-color: #cbd5e1;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #475569;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}

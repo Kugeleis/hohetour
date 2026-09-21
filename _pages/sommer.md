@@ -1,49 +1,38 @@
 ---
 layout: single
-title: "Sommer"
+title: "Sommer: Rad & Wandern"
 permalink: /sommer/
 author_profile: false
 toc: true
 wordpress_id: 11
-excerpt: "Die Hohe Tour per Rad... Hat man die Auswahl an verschiedenen Rädern, stellt sich zum Anfang die Frage, welches wohl das geeignete ist. Da die Tour durch unterschiedlichstes Gelände führt, ist gute..."
+excerpt: "Radtouren und Wanderungen auf der Hohen Tour zwischen Zinnwald, Tisá, dem Schneeberg und dem Elbtal."
 ---
-Die Hohe Tour per Rad...
 
-Hat man die Auswahl an verschiedenen Rädern, stellt sich zum Anfang die Frage, welches wohl das geeignete ist. Da die Tour durch unterschiedlichstes Gelände führt, ist guter Rat teuer (gutes Rad auch ;~}. Mit dem normalen Trekkingrad ist man aber immer auf der richtigen Seite. Lacht einen das mountain bike an, kann man die Tour auch etwas "geländiger" gestalten. Aber selbst mit dem Rennrad sind die meisten Passagen zu bewältigen und man hat auf der Straße die Nase vorn.
+### Die Hohe Tour per Rad
 
-Eine gute Idee ist es, die S-Bahn bis Schöna zu nehmen und ab dort zu radeln. Dann wird man am Abend mit der Abfahrt vom Erzgebirge belohnt.
+Hat man die Auswahl an verschiedenen Rädern, stellt sich die Frage nach dem geeigneten Gefährt. Da die Tour durch unterschiedlichstes Terrain führt – von asphaltierten Kammstraßen über Forstwege bis zu wurzeligen Abschnitten –, ist ein robustes **Trekkingrad**, **Gravelbike** oder **Mountainbike** ideal. Auch Rennräder kommen auf den meisten befestigten Teilstücken voran, erfordern aber an einzelnen Wald- und Feldpassagen Umsicht.
 
-Wer ab Dresden mit dem Rad startet, muß ca. 50km extra einplanen, die aber eher lockeres Einradeln auf dem Elbradweg bedeuten. Als Anhaltspunkt für die Runde soll folgende Tabelle dienen:
-<table class=" "><caption>Entfernungen &amp; Höhenmeter</caption>
-<thead>
-<tr>
-<th scope="col">START</th>
-<th scope="col">ENDE</th>
-<th scope="col">STRECKE</th>
-<th scope="col">HÖHENMETER</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Dresden</td>
-<td>Dresden</td>
-<td>170km</td>
-<td>800</td>
-</tr>
-<tr>
-<td>Schöna</td>
-<td>Zinnwald</td>
-<td>70km</td>
-<td>800</td>
-</tr>
-<tr>
-<td>Zinnwald</td>
-<td>Schöna</td>
-<td>70km</td>
-<td>negativ</td>
-</tr>
-</tbody>
-</table>
-Für ganz faule bietet sich auch die Möglichkeit an, den Zug oder Bus bis Altenberg zu nehmen und dann bergab zu radeln. Die sportliche Herausforderung dieser Variante ist aber nicht sehr hoch!
+Eine reizvolle Variante ist die Fahrt von Schöna im Elbtal hinauf nach Zinnwald oder umgekehrt. Wer im Elbtal startet, sammelt zuerst die Höhenmeter und belohnt sich später mit sanfteren Abschnitten. Wer in Zinnwald startet, genießt am Nachmittag die lange Abfahrt ins Elbtal.
 
-Man kann auch unterwegs Übernachten. Die günstigsten Orte dafür sind Schneeberg, Adolfsgrün, das Mückentürmchen und Zinnwald. Bei meiner letzten Tour waren aber alle Unterkünfte in Adolfsgrün geschlossen und das Mückentürmchen voll belegt! Also bitte rechtzeitig informieren! <a href="http://blog.springerweb.de/?page_id=29#Unterkünfte">Hier ist eine Liste von Unterkünften</a> auf der Strecke.
+Wer direkt ab Dresden startet, rechnet etwa 50 Zusatzkilometer auf dem Elbradweg zum Einrollen ein.
+
+### Entfernungen & Höhenmeter
+
+| Start | Ziel | Strecke | Höhenmeter |
+| :--- | :--- | :--- | :--- |
+| **Dresden** | **Dresden** (Gesamtschleife) | ca. 170 km | +800 m / -800 m |
+| **Schöna** | **Zinnwald** (Bergauf) | ca. 70 km | +800 m |
+| **Zinnwald** | **Schöna** (Bergab) | ca. 70 km | überwiegend bergab |
+
+Für eine entspannte Tagestour bietet sich die Anreise per Bus/Bahn bis Altenberg/Zinnwald an, um die Tour bergab in Richtung Schöna zu rollen.
+
+### Übernachtung & Einkehr
+
+An der Strecke bieten sich hervorragende Einkehrmöglichkeiten und Unterkünfte, u. a. in:
+- **Zinnwald / Altenberg**
+- **Mückentürmchen (Komáří vížka)**
+- **Adolfov (Adolfsgrün)**
+- **Tisá** (Tisaer Wände)
+- **Hoher Schneeberg (Děčínský Sněžník)**
+
+Bitte beachtet besonders in der Hauptsaison Ruhetage und Vorab-Reservierungen bei Unterkünften. Empfehlungen und Links findet ihr in der [Linkübersicht]({{ '/links/' | relative_url }}).

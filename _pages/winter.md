@@ -1,29 +1,31 @@
 ---
 layout: single
-title: "Winter"
+title: "Winter auf der Hohen Tour"
 permalink: /winter/
 author_profile: false
 toc: true
 wordpress_id: 13
-excerpt: "Grundvoraussetzung für eine Skitour ist natürlich reichlich Schnee. Damit man nicht über große Teile die Bretter tragen muß oder über Dreck abschmirgelt, muß bis ins Elbtal hinein Schnee liegen. Oh..."
+excerpt: "Tipps und Voraussetzungen für die Skitour über den Erzgebirgskamm von Zinnwald nach Schöna."
 ---
-Grundvoraussetzung für eine Skitour ist natürlich reichlich Schnee. Damit man nicht über große Teile die Bretter tragen muß oder über Dreck abschmirgelt, muß bis ins Elbtal hinein Schnee liegen. Ohnehin greife man eher nicht zu den nagelneuen Superrennern.
 
-Heißt man nicht Ole Einar und donnert die 60 Kilometer in drei Stunden, sollte man beizeiten aus den Federn kriechen. Bewährt hat sich der 6:34-Bus <a href="https://www.vvo-online.de/de/fahrplan/fahrplanbuch/linien?line=360" target="_blank" data-cke-saved-href="https://www.vvo-online.de/de/fahrplan/fahrplanbuch/linien?line=360">Linie 360</a> ab Hauptbahnhof bis Zinnwald. So steht man vor 8 Uhr in Zinnwald auf den Brettern. Die Endstation ist nur wenige Meter vom alten (heute gespenstisch leeren) Grenzübergang entfernt.
+Grundvoraussetzung für eine erfolgreiche Skitour ist natürlich ausreichend Schnee. Damit man die Bretter nicht über lange Strecken tragen muss oder Beläge beschädigt, sollte die Schneedecke idealerweise bis hinab ins Elbtal reichen. Für die Tour greift man am besten zu robusten Tourenskiern oder Wanderski statt zu empfindlichen Wettkampfreihern.
 
-Die Tour ist eigentlich nicht sonderlich anspruchsvoll. Schließlich bekommt man über 700 Höhenmeter geschenkt, aber sie ist eben lang! 8 Stunden mit Pausen sollte man einplanen. Taschenlampe einstecken!
+Wer die gut 60 Kilometer lange Distanz nicht im Eilmarsch absolviert, sollte früh aufbrechen. Bewährt hat sich der morgendliche Bus der **[Linie 360 (VVO)](https://www.vvo-online.de/de/fahrplan/fahrplanbuch/linien?line=360)** ab Dresden Hauptbahnhof direkt nach Zinnwald. So steht man rechtzeitig gegen 8 Uhr am Kamm auf den Skiern. Die Endstation befindet sich nur wenige Meter vom ehemaligen Grenzübergang entfernt.
 
-Hier findet man vorerst einen Tourenvorschlag: Diese führt von Zinnwald startend immer auf tschechischer Seite über das Mückentürmchen bis Dolný Zleb im Elbtal. Von da sind es wenige Kilometer zur S-Bahn in Schöna.
+### Tour-Charakteristik
 
-(es gab Bemerkungen, daß das nicht die "echte" Tour ist, da sie nicht vollständig auf sächsischer Seite verläuft. Nun ja, wer auch immer den Anspruch auf das Original erhebt, dem sei gesagt, daß die Wege auf deutscher Seite leider im Winter sehr deutsch fleißig geräumt wurden und so nur schlecht für Skitouren geeignet waren.
+- **Länge:** ca. 60 km
+- **Dauer:** ca. 7 bis 9 Stunden inklusive Pausen
+- **Höhenmeter:** ca. 700 m Abstieg ins Elbtal (mit Gegenanstiegen am Kamm)
+- **Ausrüstung:** Stirnlampe, Thermoskanne, Wechselkleidung, Kartenmaterial / GPS-App (Mapy.cz).
 
+Die klassische Hauptroute verläuft von Zinnwald über tschechisches Gebiet entlang des Kamms: **Zinnwald – Mückentürmchen (Komáří vížka) – Adolfov – Tisá – Schneeberg (Děčínský Sněžník) – Dolní Žleb / Schöna**.
+
+Detailbeschreibung der Skitour: **[Zur Skitour-Routenbeschreibung]({{ '/skitour-zinnwald-mueckentuermchen-schoena/' | relative_url }})**.
 
 ---
 
 ## Kommentare aus dem Original-Blog
 
-
 **Gerry** - *2019-10-20 19:15:42*
-
-> Sächsische Seite ist die echte! Aber wie schon gesagt, Forstwege meiden. Die "Erfinder" der Hohen Tor starteten von Schellerhau, der Skihütte Hochglück!
-
+> Sächsische Seite ist die echte! Aber wie schon gesagt, Forstwege meiden. Die "Erfinder" der Hohen Tour starteten von Schellerhau, der Skihütte Hochglück!
