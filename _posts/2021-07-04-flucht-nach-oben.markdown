@@ -6,6 +6,7 @@ slug: flucht-nach-oben
 wordpress_id: 967
 author_profile: false
 read_time: true
+map: true
 toc: true
 toc_label: "Inhalt"
 comments: false
@@ -54,12 +55,7 @@ excerpt: "Es wird heiß Für die Stad sind deutlich über 30 Grad angesagt. Das 
 <h3>Fazit</h3>
 <p>Die Runde ab Altenberg ist eine schöne Variante mit viel Abfahrt (immerhin bekommt man über 600 Höhenmeter geschenkt. Trotzdem kommen auf dieser Route 900hm zusammen. Die Anstiege addieren sich also ordentlich. Die Abkürzung über den Taubenteich erlaubt es, quasi ohne zu treten vom Erzgebirgskamm bis Königstein zu rollen und erspart viele Asphaltmeter Elbradweg. Natürlich kann man da auch wieder in die S-Bahn steigen.</p>
 <p>Unterwegs warten zum Teil sehr grobe Wege und ernsthafte Abfahrten. Ein mountainbike, Ausdauer und fahrerisches Können sind hier unabdingbar. Es gibt aber immer auch einfachere Alternativen.</p>
-<p>
-
-> **Hinweis:** [Karte (Zentrum: autolat,autolon) - GPX: `{{ '/assets/images/uploads/gpx/taubenteich.gpx' | relative_url }}`]
-
-</p>
-<p><a href="{{ '/assets/images/uploads/gpx/taubenteich.gpx' | relative_url }}">Tour GPX download</a></p>
+{% include map.html gpx="/assets/images/uploads/gpx/taubenteich.gpx" title="Tour über Taubenteich GPX" %}
 </div>
 
 <div class="wp-block-column" style="flex-basis:33.33%">

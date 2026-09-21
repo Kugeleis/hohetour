@@ -5,16 +5,18 @@ permalink: /hallo-welt/
 author_profile: false
 toc: true
 wordpress_id: 1
-excerpt: "Die Hohe Tour ... bezieht ihren Reiz aus den stetig wechselnden Landschaften, die man durchmißt. Von den unwirtlichen Höhen Zinnwalds über die Wälder um Adlofsgrün, durch die Sümpfe vor Tisa zu den..."
+excerpt: "Die Hohe Tour zwischen Zinnwald und Schöna – Skitour im Winter, Rad- und Wandertouren im Sommer."
 ---
-<p>Die Hohe Tour ...</p>
 
-<p>bezieht ihren Reiz aus den stetig wechselnden Landschaften, die man durchmißt. Von den unwirtlichen Höhen Zinnwalds über die Wälder um Adlofsgrün, durch die Sümpfe vor Tisa zu den gleichnamigen Wänden und schließlich in die Schlüchte am Elbtal - geologisch wie klimatisch sehr verschiedene Gebiete finden sich auf den gut 60 Kilometern der Tour. Ob man im Winter auf Ski, im Sommer zu Fuß oder mit dem Rad unterwegs ist - die Landschaft ist bezaubernd. Nicht die spektakulären Blicke oder Felsen sind es, die diese Landschaft ausmachen. Es ist eher die Weite, die Unberührtheit und Abgeschiedenheit, die den Reiz ausmachen. Jeder Besuch bringt neue Entdeckungen.</p>
+Die Hohe Tour bezieht ihren Reiz aus den stetig wechselnden Landschaften, die man durchmisst: Von den unwirtlichen Höhen Zinnwalds über die Wälder um Adolfsgrün (Adolfov), durch die Hochmoore vor Tisá zu den Tisaer Wänden und schließlich in die Schluchten am Elbtal. Geologisch wie klimatisch sehr verschiedene Gebiete finden sich auf den gut 60 Kilometern der Tour. Ob man im Winter auf Ski, im Sommer zu Fuß oder mit dem Rad unterwegs ist – die Landschaft ist bezaubernd. Nicht nur spektakuläre Ausblicke oder Felsen machen diesen Landstrich aus, sondern vor allem die Weite, Unberührtheit und Abgeschiedenheit. Jeder Besuch bringt neue Entdeckungen.
 
-<p>Obwohl diese Grenzregion nur wenige Kilometer von den tschechischen Großstädten entfernt ist und auch an die viel besuchten Regionen des Osterzgebirges und des Elbsandsteingebirges grenzt, ist sie nahezu menschenleer. Wanderer und Touristen sind rar. Außer nach Tisa und Schneeberg verirrt sich kaum jemand hier her. Adlofsgrün (Adolfov) ist ein kleines Skigebiet, aber am Ortsausgang ist man auch hier wieder allein mit sich und der Natur.</p>
+Obwohl diese Grenzregion nur wenige Kilometer von größeren Städten entfernt ist und an die viel besuchten Regionen des Osterzgebirges und Sächsisch-Böhmischen Elbsandsteingebirges grenzt, ist sie an vielen Abschnitten überraschend ruhig. Außer nach Tisá und zum Hohem Schneeberg (Děčínský Sněžník) verirren sich manche Abschnitte nur wenige Wanderer. Adolfsgrün (Adolfov) bietet im Winter ein kleines Langlauf- und Skigebiet, doch schon kurz hinter dem Ort ist man wieder allein mit der Natur.
 
-<p>Diese Seiten sollen etwas Hilfestellung bei der Planung einer Tour in dieser Gegend geben. Der "Klassiker" schlechthin dabei ist die HOHE TOUR, in engeren Sinne eine Skitour von Zinnwald nach Schöna. Als Skitour bleibt sie aber den wenigen Tagen im Jahr vorbehalten, da man bis Schöna genug Weiß findet. Anlaß für diese Seiten war meine erfolglose Suche nach der Wegbeschreibung im Internet. Hier versuche ich nun, die mir bekannten Routen zu beschreiben. Ich hoffe, diese Seite ist dazu hilfreich. Anregungen, Kritik sowie neue Tourvarianten und Berichte sind jederzeit wilkommen.</p>
+Diese Seiten geben Orientierung und Planungshilfen für Touren in dieser Grenzregion zwischen Böhmen und Sachsen:
 
-<p>Auf denn, viel Spaß auf der HOHEN TOUR wünscht der webonkel.</p>
+- [Winter-Skitour von Zinnwald nach Schöna]({{ '/skitour-zinnwald-mueckentuermchen-schoena/' | relative_url }})
+- [Tipps für Wintertouren]({{ '/winter/' | relative_url }}) und [Radtouren im Sommer]({{ '/sommer/' | relative_url }})
+- [Ausrüstung & Anreise mit Bus & Bahn]({{ '/ausruestung-anreise/' | relative_url }})
+- [Nützliche Links & Partner]({{ '/links/' | relative_url }})
 
-> **Hinweis:** [Karte - OpenStreetMap-Karte der Tour (Original: hohetour.de)]
+Viel Spaß auf der **Hohen Tour** wünscht der *webonkel*!

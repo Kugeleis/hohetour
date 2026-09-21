@@ -1,0 +1,16 @@
+<div class="leaflet-map-container" style="margin: 1.5rem 0;">
+  <div class="leaflet-map"
+       style="height: 460px; width: 100%; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 3px 10px rgba(0,0,0,0.1);"
+       data-center="{{ include.center | default: '50.80,13.965' }}"
+       data-zoom="{{ include.zoom | default: 11 }}"
+       {% if include.gpx %}data-gpx="{{ include.gpx | relative_url }}"{% endif %}
+       data-title="{{ include.title | default: 'Hohe Tour' }}">
+  </div>
+  {% if include.gpx %}
+  <div style="margin-top: 0.6rem; text-align: right;">
+    <a href="{{ include.gpx | relative_url }}" class="btn btn--info btn--small" download style="border-radius: 4px; font-weight: 600;">
+      <i class="fas fa-file-download"></i> GPX-Track herunterladen
+    </a>
+  </div>
+  {% endif %}
+</div>

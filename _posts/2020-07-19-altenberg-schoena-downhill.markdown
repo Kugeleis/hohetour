@@ -6,6 +6,7 @@ slug: altenberg-schoena-downhill
 wordpress_id: 241
 author_profile: false
 read_time: true
+map: true
 toc: true
 toc_label: "Inhalt"
 comments: false
@@ -26,9 +27,4 @@ excerpt: "Mit der Monatskarte & dem Rad geht es nach Altenberg. Der Sommeraktion
 
 <figure class="wp-block-image size-large"><img src="{{ '/assets/images/uploads/2020/07/photo5233500208493604283-1024x329.jpg' | relative_url }}" alt="" class="wp-image-276"/><figcaption>Das Höhenprofil der Tour mit drei markanten Abfahrten: Mückenürmchen, Schneeeberg und zur Elbe.</figcaption></figure>
 
-<p>
-
-> **Hinweis:** [Karte (Zentrum: autolat,autolon) - GPX: `{{ '/assets/images/uploads/2020/07/2020-07-18_Hohe_Tour.gpx' | relative_url }}`]
-
-</p>
-<p><a href="{{ '/assets/images/uploads/2020/07/2020-07-18_Hohe_Tour.gpx' | relative_url }}">GPX track download</a></p>
+{% include map.html gpx="/assets/images/uploads/2020/07/2020-07-18_Hohe_Tour.gpx" title="Altenberg - Schöna Downhill MTB Route" %}
