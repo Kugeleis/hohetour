@@ -4,6 +4,7 @@ author_profile: false
 title: "Hohe Tour"
 excerpt: "Unterwegs zwischen Böhmen und Sachsen – Skitour, Rad und Wanderschuh von Zinnwald nach Schöna."
 header:
+  overlay_image: /assets/images/header-mueckentuermchen.jpg
   overlay_filter: 0.3
 ---
 
