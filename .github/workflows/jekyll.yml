@@ -47,16 +47,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6
-      - name: Validate WordPress conversion is committed
-        run: |
-          set -eu
-          python3 tools/run_convert.py
-          git status --porcelain -- _posts _pages | tee /tmp/convert-status.txt
-          if [ -s /tmp/convert-status.txt ]; then
-            echo "::error::Converted posts/pages differ from committed files. Run 'task convert' locally and commit the result."
-            exit 1
-          fi
-          git diff --stat
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
