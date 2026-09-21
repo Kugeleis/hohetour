@@ -19,16 +19,12 @@ Aus `hohetour.WordPress.2026-09-20.xml` (Stand September 2026) migriert:
   Navigation (`_data/navigation.yml`).
 
 Bilder/GPX liegen lokal unter `assets/images/uploads/…` (aus
-`wp-content/uploads/…` übernommen, Pfadstruktur beibehalten);
-WP-Shortcodes (`mapsmarker`, `osm_map_v3`, `wpforecast`,
-`table`, `Best_Wordpress_Gallery`) wurden zu Hinweisboxen. Details in
-[`tools/README.md`](tools/README.md).
+`wp-content/uploads/…` übernommen, Pfadstruktur beibehalten).
 
 ## Entwicklung
 
 ```bash
 task install     # bundle install
-task convert     # _posts/ + _pages/ aus dem WP-XML neu erzeugen
 task build       # Jekyll-Build nach _site/
 task serve       # http://localhost:4000 mit Live-Reload
 task build:pages # Build wie GitHub Pages (baseurl /hohetour)

@@ -86,11 +86,6 @@ tasks:
     cmds:
       - '{{.JEKYLL}} build'
 
-  convert:
-    desc: Re-generate _posts/ and _pages/ from hohetour.WordPress.2026-09-20.xml
-    cmds:
-      - python3 tools/run_convert.py
-
   build:prod:
     desc: Build with JEKYLL_ENV=production (like GitHub Pages does)
     deps: [install]
