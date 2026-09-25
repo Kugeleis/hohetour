@@ -66,8 +66,6 @@ tag_archive:
 # Keine Paginierung: jekyll-paginate braucht index.html, wir nutzen index.markdown
 # (Minimal Mistakes listet auf der Startseite ohnehin alle Posts).
 
-atom_feed:
-  path: feed.xml
 
 sitemap:
   exclude:
