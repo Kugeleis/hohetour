@@ -22,7 +22,7 @@ im Winter auf Ski, im Sommer mit dem Rad oder zu Fuß.
       <h3><i class="fas fa-map-marked-alt"></i> Die Tour im Überblick</h3>
       <p>Erfahre mehr über Charakter, Landschaft und Geschichte der 60 km langen Kammquerung.</p>
     </div>
-    <a href="{{ '/hallo-welt/' | relative_url }}" class="btn btn--primary">Überblick lesen</a>
+    <a href="{{ '/hallo-welt/' | relative_url }}" class="btn btn--overview">Überblick lesen</a>
   </div>
 
   <div class="feature-card">
@@ -30,7 +30,7 @@ im Winter auf Ski, im Sommer mit dem Rad oder zu Fuß.
       <h3><i class="fas fa-skiing"></i> Skitour-Klassiker</h3>
       <p>Detaillierte Etappenbeschreibung mit interaktiver OpenStreetMap-Karte & GPX-Download.</p>
     </div>
-    <a href="{{ '/skitour-zinnwald-mueckentuermchen-schoena/' | relative_url }}" class="btn btn--danger">Skitour & Karte</a>
+    <a href="{{ '/skitour-zinnwald-mueckentuermchen-schoena/' | relative_url }}" class="btn btn--skitour">Skitour & Karte</a>
   </div>
 
   <div class="feature-card">
@@ -38,17 +38,17 @@ im Winter auf Ski, im Sommer mit dem Rad oder zu Fuß.
       <h3><i class="fas fa-bus-alt"></i> Ausrüstung & Anreise</h3>
       <p>Verkehrsanbindungen (VVO Bus 360, S-Bahn S1), Ausrüstungstipps und Kartenempfehlungen.</p>
     </div>
-    <a href="{{ '/ausruestung-anreise/' | relative_url }}" class="btn btn--info">Anreise & Infos</a>
+    <a href="{{ '/ausruestung-anreise/' | relative_url }}" class="btn btn--anreise">Anreise & Infos</a>
   </div>
 
   <div class="feature-card">
     <div>
-      <h3><i class="fas fa-sun"></i> Sommer & Winter</h3>
+      <h3><i class="fas fa-sun-plant-wilt"></i> Sommer & Winter</h3>
       <p>Tipps für Radfahrer, Mountainbiker und Langläufer auf dem tschechischen und sächsischen Kamm.</p>
     </div>
-    <div>
-      <a href="{{ '/winter/' | relative_url }}" class="btn btn--small">Winter</a>
-      <a href="{{ '/sommer/' | relative_url }}" class="btn btn--small">Sommer</a>
+    <div class="card-buttons-row">
+      <a href="{{ '/winter/' | relative_url }}" class="btn btn--winter"><i class="fas fa-snowflake"></i> Winter</a>
+      <a href="{{ '/sommer/' | relative_url }}" class="btn btn--sommer"><i class="fas fa-sun"></i> Sommer</a>
     </div>
   </div>
 </div>
