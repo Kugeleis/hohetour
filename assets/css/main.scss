@@ -32,41 +32,124 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-/* Feature grid cards for home page */
+/* Feature grid cards for home page - warm outdoor aesthetic */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
 }
 
 .feature-card {
-  background: #fdfdfd;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  background: #fffdfa;
+  border: 1px solid #e8dec8;
+  border-radius: 12px;
   padding: 1.5rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(100, 70, 30, 0.06);
+  overflow: hidden;
 }
 
 .feature-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  border-color: #cbd5e1;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(90, 60, 20, 0.12);
+  border-color: #d4c3a7;
 }
 
 .feature-card h3 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-  color: #1e293b;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  color: #2c221e;
+  font-weight: 700;
+}
+
+.feature-card h3 i {
+  margin-right: 0.35rem;
+  color: #a85d32;
 }
 
 .feature-card p {
-  font-size: 0.95rem;
-  color: #475569;
+  font-size: 0.98rem;
+  color: #4a4038;
+  line-height: 1.55;
   flex-grow: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Button row container for Sommer & Winter card */
+.card-buttons-row {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-buttons-row .btn {
+  flex: 1 1 0%;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0.6em 0.5em;
+  font-size: 0.88rem;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* Topic-specific button color tones */
+.btn--overview {
+  background-color: #b93829 !important;
+  color: #ffffff !important;
+  border: 1px solid #a32f22;
+}
+.btn--overview:hover {
+  background-color: #9d2f21 !important;
+  color: #ffffff !important;
+}
+
+.btn--skitour {
+  background-color: #d94848 !important;
+  color: #ffffff !important;
+  border: 1px solid #c43c3c;
+}
+.btn--skitour:hover {
+  background-color: #be3939 !important;
+  color: #ffffff !important;
+}
+
+.btn--anreise {
+  background-color: #0f766e !important;
+  color: #ffffff !important;
+  border: 1px solid #0d645e;
+}
+.btn--anreise:hover {
+  background-color: #0d5f58 !important;
+  color: #ffffff !important;
+}
+
+.btn--winter {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  border: 1px solid #0270a9;
+}
+.btn--winter:hover {
+  background-color: #0369a1 !important;
+  color: #ffffff !important;
+}
+
+.btn--sommer {
+  background-color: #d97706 !important;
+  color: #ffffff !important;
+  border: 1px solid #b86505;
+}
+.btn--sommer:hover {
+  background-color: #b45309 !important;
+  color: #ffffff !important;
 }
