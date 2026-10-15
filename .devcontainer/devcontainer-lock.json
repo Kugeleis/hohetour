@@ -5,10 +5,10 @@
       "resolved": "ghcr.io/audacioustux/devcontainers/taskfile@sha256:c7650e10b0a4b97037e3ecdf1d59878f0158cb50957298d5bdde5b61210fb7ba",
       "integrity": "sha256:c7650e10b0a4b97037e3ecdf1d59878f0158cb50957298d5bdde5b61210fb7ba"
     },
-    "ghcr.io/devcontainer-config/features/dot-config:4": {
-      "version": "4.0.0",
-      "resolved": "ghcr.io/devcontainer-config/features/dot-config@sha256:d9ca770ccb218e619d5725fd50f00dfacdf582d92a8c3901f11b53b1caddd878",
-      "integrity": "sha256:d9ca770ccb218e619d5725fd50f00dfacdf582d92a8c3901f11b53b1caddd878"
+    "ghcr.io/devcontainer-config/features/dot-config:5": {
+      "version": "5.0.0",
+      "resolved": "ghcr.io/devcontainer-config/features/dot-config@sha256:dfbe76767fb0e284f078a06e7857734cc765daf5ae4e5c4ea4152105e861dd0b",
+      "integrity": "sha256:dfbe76767fb0e284f078a06e7857734cc765daf5ae4e5c4ea4152105e861dd0b"
     },
     "ghcr.io/devcontainers/features/node": {
       "version": "2.1.0",

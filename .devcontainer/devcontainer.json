@@ -15,7 +15,7 @@
   "features": {
     "ghcr.io/devcontainers/features/node": {},
     "ghcr.io/audacioustux/devcontainers/taskfile:1": {},
-    "ghcr.io/devcontainer-config/features/dot-config:4": {}
+    "ghcr.io/devcontainer-config/features/dot-config:5": {}
   },
   "customizations": {
     "vscode": {
