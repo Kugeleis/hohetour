@@ -36,7 +36,7 @@ jobs:
       - name: Setup Ruby
         # v1.324.0 - runs on Node 24; knows the current Ruby patch releases
         # https://github.com/ruby/setup-ruby/releases/tag/v1.324.0
-        uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8
+        uses: ruby/setup-ruby@651ff0d62c5c79bed6d53ec518387aae20e72c1a
         with:
           # Must be >= 3.2: Gemfile.lock pins Bundler 4 (BUNDLED WITH 4.0.20),
           # which requires Ruby >= 3.2.0. Keep in sync with the dev container
